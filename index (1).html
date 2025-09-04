@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gift Experience Italínea – Edição Limitada</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; font-family:'Montserrat', sans-serif; background:#f8fafc; color:#0f172a; }
+    header { background:#0B1F52; color:#fff; text-align:center; padding:60px 20px; }
+    header h1 { font-family:'Playfair Display', serif; font-size:36px; margin-bottom:16px; }
+    header p { font-size:18px; margin-bottom:20px; }
+    .cta { display:inline-block; padding:14px 24px; border-radius:12px; font-weight:700; background:linear-gradient(180deg,#E9D79A 0%,#C9A646 100%); color:#121212; text-decoration:none; }
+    section { padding:40px 20px; max-width:640px; margin:0 auto; }
+    .card { background:#fff; padding:24px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,.1); }
+    h2 { font-family:'Playfair Display', serif; color:#0B1F52; margin-bottom:16px; }
+    footer { text-align:center; padding:20px; font-size:14px; color:#64748b; }
+    .muted{font-size:12px;color:#475569}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gift Experience Italínea – Edição Limitada</h1>
+    <p>Receba um <strong>Cooktop de Indução Premium</strong> ao confirmar seu projeto até <strong>15 de setembro de 2025</strong>.</p>
+    <a href="#formulario" class="cta">Quero Garantir Meu Gift Experience</a>
+  </header>
+
+  <section id="formulario">
+    <div class="card">
+      <h2>Confirmar Gift Experience</h2>
+      <p>Preencha seus dados e nossa equipe entrará em contato.</p>
+      <a class="cta" id="wa" href="#" target="_blank" rel="noopener">Confirmar pelo WhatsApp</a>
+      <p class="muted">Este botão abrirá seu WhatsApp já com a mensagem pronta.</p>
+    </div>
+  </section>
+
+  <footer>
+    Italínea Preferida · São José do Rio Preto · SP <br/>
+    © 2025 Italínea Preferida. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    // Ajuste o número no formato 55DDDNÚMERO sem espaços
+    const numero = '5517999999999'; // Trocar pelo número real
+    const msg = encodeURIComponent('Olá! Quero confirmar meu Gift Experience (Cooktop de Indução Premium) até 15/09.');
+    const link = `https://wa.me/${numero}?text=${msg}`;
+    document.getElementById('wa').href = link;
+  </script>
+</body>
+</html>
